@@ -1,0 +1,31 @@
+<html>
+
+  <head>
+    <title>Web-Based VR Experiments Powered by the Crowd</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <div class='canvas'>
+      <p class='title'>
+        Web-Based VR Experiments Powered By The Crowd
+      </p>
+    </div>
+    <img id='goggle-opening' src="./static_assets/goggle_grey_frame_reduced_curve_3840x9216.svg" alt="goggle" />
+    <script src="./client.bundle.js"></script>
+    <script defer>
+      // Initialize the React VR application
+      ReactVR.init('./index.bundle.js', document.body);
+
+    </script>
+    <img id='goggle' src="./static_assets/goggle_grey_frame_reduced_curve_3840x9216.svg" alt="goggle" />
+    <h1>
+      Web-Based <br/>
+      VR Experiments <br/>
+      Powered By The Crowd
+    </h1>
+  </body>
+
+</html>
